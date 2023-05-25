@@ -1,0 +1,40 @@
+/* 顏色改不了 */
+.custom-navbar {
+  background-color: #4575AB;
+}
+  
+  nav.navbar .navbar-nav .nav-item .nav-link {
+    color: #F8E3CB;
+    font-family: Microsoft JhengHei, Arial, sans-serif;
+    font-size: 16px;
+    margin-left: 60px;
+  }
+
+  .navbar-nav{
+    margin-right: 60px;
+  }
+
+  .nav-item {
+    font-family: Microsoft JhengHei, Arial, sans-serif;
+    font-size: 16px;
+    margin-left: 60px;
+  }
+  
+  .nav-item a:hover {
+    color: white; /* 鼠标悬停时的颜色 */
+    font-weight: bold;
+  }  
+  
+  nav.navbar .navbar-brand  {
+    color: #F8E3CB;
+    font-weight: bold;
+  }
+  
+  nav.navbar .logo-pic {
+    width: 100px;
+  }
+  
+  nav.navbar {
+    height: 80px;
+  }
+  

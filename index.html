@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CEO</title>
+  <link rel="stylesheet" href="css/antd.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+  <script src="js/antd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="root"></div>
+
+  <script type="text/babel">
+    // 在 script 标签中使用 type="text/babel" 可以让 JSX 代码被 Babel 转换
+
+    // 定义一个 React 组件
+    function Navbar() {
+      return (
+        <nav className="navbar navbar-expand-sm navbar-dark bg-secondary">
+          <div className="container-fluid">
+            <a className="navbar-brand" href=""><img className="logo-pic" src="img/logo.png" alt="LOGO"/>CEO</a>
+            <div className="collapse navbar-collapse" id="navbarCollapse">
+              <ul className="navbar-nav ml-auto">
+                <li className="nav-item">
+                  <a className="nav-link" href="">關於我們</a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="">學習資源</a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="">課程清單</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      );
+    }
+
+    // 将组件渲染到页面的根元素
+    ReactDOM.render(
+      <Navbar />,
+      document.getElementById('root')
+    );
+  </script>
+</body>
+</html>
