@@ -1,4 +1,4 @@
-.navbar {
+.background_blue {
   background-color: #4575AB;
 }
   
@@ -35,9 +35,9 @@
     width: 60px;
   }
   
-  nav.navbar {
+  /* nav.navbar {
     height: 80px;
-  }
+  } */
 
   /* @media (max-width: 767px) {
     .navbar-expand-md .navbar-collapse {
@@ -56,4 +56,12 @@
     .navbar-expand-md .navbar-toggler {
       display: block;
     }
+  }
+
+  .spacer {
+    height: 30px; /* 調整你希望的間距高度 */
+  }
+
+  .yellow{
+    color: #F8E3CB;
   }
