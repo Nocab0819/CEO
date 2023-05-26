@@ -1,25 +1,26 @@
-/* 顏色改不了 */
-.custom-navbar {
+.navbar {
   background-color: #4575AB;
 }
   
-  nav.navbar .navbar-nav .nav-item .nav-link {
+  nav.navbar .navbar-nav .nav-item .nav-link, .navbar-brand {
     color: #F8E3CB;
     font-family: Microsoft JhengHei, Arial, sans-serif;
-    font-size: 16px;
+    font-size: 128%;
     margin-left: 60px;
+  }
+
+  .navbar-brand{
+    margin-left: 0px;
   }
 
   .navbar-nav{
     margin-right: 60px;
   }
 
-  .nav-item {
-    font-family: Microsoft JhengHei, Arial, sans-serif;
-    font-size: 16px;
-    margin-left: 60px;
+  .nav-item{
+    width: 158px;
   }
-  
+
   .nav-item a:hover {
     color: white; /* 鼠标悬停时的颜色 */
     font-weight: bold;
@@ -31,10 +32,28 @@
   }
   
   nav.navbar .logo-pic {
-    width: 100px;
+    width: 60px;
   }
   
   nav.navbar {
     height: 80px;
   }
+
+  @media (max-width: 767px) {
+    .navbar-expand-md .navbar-collapse {
+      display: none;
+    }
   
+    .navbar-expand-md .navbar-toggler {
+      display: block;
+    }
+  }
+  @media (max-width: 5000px) {
+    .navbar-expand-md .navbar-collapse {
+      display: none;
+    }
+  
+    .navbar-expand-md .navbar-toggler {
+      display: block;
+    }
+  }
