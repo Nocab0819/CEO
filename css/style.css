@@ -39,16 +39,16 @@
     height: 80px;
   }
 
-  @media (max-width: 767px) {
+  /* @media (max-width: 767px) {
     .navbar-expand-md .navbar-collapse {
       display: none;
     }
   
     .navbar-expand-md .navbar-toggler {
       display: block;
-    }
-  }
-  @media (max-width: 5000px) {
+    } */
+  /* } */
+  @media (max-width: 767px) {
     .navbar-expand-md .navbar-collapse {
       display: none;
     }
