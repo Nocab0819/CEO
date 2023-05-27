@@ -1,4 +1,4 @@
-.background_blue {
+.navbar {
   background-color: #4575AB;
 }
   
@@ -35,19 +35,10 @@
     width: 60px;
   }
   
-  /* nav.navbar {
+  nav.navbar {
     height: 80px;
-  } */
+  }
 
-  /* @media (max-width: 767px) {
-    .navbar-expand-md .navbar-collapse {
-      display: none;
-    }
-  
-    .navbar-expand-md .navbar-toggler {
-      display: block;
-    } */
-  /* } */
   @media (max-width: 767px) {
     .navbar-expand-md .navbar-collapse {
       display: none;
@@ -56,12 +47,4 @@
     .navbar-expand-md .navbar-toggler {
       display: block;
     }
-  }
-
-  .spacer {
-    height: 30px; /* 調整你希望的間距高度 */
-  }
-
-  .yellow{
-    color: #F8E3CB;
   }

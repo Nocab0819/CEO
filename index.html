@@ -7,6 +7,7 @@
   <title>CEO</title>
   <link rel="stylesheet" href="css/antd.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+  <script src="js/antd.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.production.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.production.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
@@ -18,11 +19,17 @@
   <div id="root"></div>
 
   <script type="text/babel">
+    // 在 script 标签中使用 type="text/babel" 可以让 JSX 代码被 Babel 转换
+
+    // 定义一个 React 组件
     function Navbar() {
       return (
-        <nav className="navbar background_blue navbar-expand-sm navbar-expand-md navbar-expand-lg navbar-dark py-2">
+        <nav className="navbar navbar-expand-sm navbar-expand-md navbar-expand-lg navbar-dark">
           <div className="container-fluid">
             <a className="navbar-brand" href=""><img className="logo-pic" src="img/CEOlogo.png" alt="LOGO"/>&ensp;&ensp;&ensp;CEO首席教育</a>
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+              <span className="navbar-toggler-icon"></span>
+            </button>
             <div className="collapse navbar-collapse" id="navbarCollapse">
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item">
@@ -36,74 +43,15 @@
                 </li>
               </ul>
             </div>
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
-              <span className="navbar-toggler-icon"></span>
-            </button>
           </div>
         </nav>
       );
     }
 
-    <div className="container">
-      <div className="row">
-        <div className="col-3">元素 1</div>
-        <div className="col-2">元素 2</div>
-      </div>
-    </div>
 
-    function Card() {
-      return (
-        <div className="col-md-6">
-          <div className="card">
-            <img src="your-image-url.jpg" className="card-img-top" alt="Card Image" />
-            <div className="card-body">
-              <h5 className="card-title">Card Title</h5>
-              <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id fringilla ligula.</p>
-              <div className="btn-group">
-                <button type="button" className="btn btn-primary">1</button>
-                <button type="button" className="btn btn-primary">2</button>
-                <button type="button" className="btn btn-primary">3</button>
-                <button type="button" className="btn btn-primary">4</button>
-                <button type="button" className="btn btn-primary">5</button>
-                <button type="button" className="btn btn-primary">6</button>
-                <button type="button" className="btn btn-primary">7</button>
-                <button type="button" className="btn btn-primary">8</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      );
-    }
-
-
-    function Footer() {
-      return (
-        <footer className="footer py-2 background_blue">
-          <div className="container text-center">
-            <small className="fw-light mb-0 yellow">本報告不提供任何投資建議。所有資料僅供信息和教育目的。不應基於此處提供的信息做出任何投資決策，您對自己的投資決策完全負責。</small>
-          </div>
-        </footer>
-      );
-    }
-
-    function App() {
-      return (
-        <div>
-          <Navbar />
-          <div className="spacer"></div>
-          <div className="container">
-            <div className="row">
-              <Card /> {/* 在這裡加入卡片元件 */}
-              <div className="col-md-4">元素 2</div>
-            </div>
-          </div>
-          <Footer />
-        </div>
-      );
-    }
-
+    // 将组件渲染到页面的根元素
     ReactDOM.render(
-      <App />,
+      <Navbar />,
       document.getElementById('root')
     );
   </script>
