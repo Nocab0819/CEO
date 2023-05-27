@@ -69,35 +69,44 @@
     ];
 
     function BigCard() {
-      const [currentIndex, setCurrentIndex] = React.useState(0);
+    const [currentIndex, setCurrentIndex] = React.useState(0);
 
-      const handleImageChange = (index) => {
-        setCurrentIndex(index);
-      };
+    const handleImageChange = (index) => {
+      setCurrentIndex(index);
+    };
 
-      return (
-        <div className="col-md-8">
-          <div className="card">
-            <img src={imagePaths[currentIndex]} className="card-img-top" alt="Card Image" />
-            <div className="card-body">
-              <h5 className="card-title">{titleArray[currentIndex]}</h5>
-              <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id fringilla ligula.</p>
-              <div className="btn-group" style={{ zIndex: 1 }}>
-                {imagePaths.map((path, index) => (
-                  <button
-                    type="button"
-                    className="btn btn-primary rounded-circle"
-                    onClick={() => handleImageChange(index)}
-                  >
-                    {index + 1}
-                  </button>
-                ))}
-              </div>
+    return (
+      <div className="col-md-8">
+        <div className="card">
+          <div className="image-container"> 
+            <img
+              src={imagePaths[currentIndex]}
+              className="card-img-top"
+              alt="Card Image"
+            />
+          </div>
+          <div className="card-body">
+            <h5 className="card-title">{titleArray[currentIndex]}</h5>
+            <p className="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id
+              fringilla ligula.
+            </p>
+            <div className="btn-group" style={{ zIndex: 1 }}>
+              {imagePaths.map((path, index) => (
+                <button
+                  type="button"
+                  className="btn btn-primary rounded-circle"
+                  onClick={() => handleImageChange(index)}
+                >
+                  {index + 1}
+                </button>
+              ))}
             </div>
           </div>
         </div>
-      );
-    }
+      </div>
+    );
+  }
 
     function Footer() {
       return (
