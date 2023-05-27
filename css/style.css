@@ -1,4 +1,4 @@
-.navbar {
+.background_blue {
   background-color: #4575AB;
 }
   
@@ -35,10 +35,19 @@
     width: 60px;
   }
   
-  nav.navbar {
+  /* nav.navbar {
     height: 80px;
-  }
+  } */
 
+  /* @media (max-width: 767px) {
+    .navbar-expand-md .navbar-collapse {
+      display: none;
+    }
+  
+    .navbar-expand-md .navbar-toggler {
+      display: block;
+    } */
+  /* } */
   @media (max-width: 767px) {
     .navbar-expand-md .navbar-collapse {
       display: none;
@@ -48,3 +57,42 @@
       display: block;
     }
   }
+
+  .spacer {
+    height: 30px; /* 調整你希望的間距高度 */
+  }
+
+  .yellow{
+    color: #F8E3CB;
+  }
+
+  /* 待調整圖片大小 */
+  .card-img {
+    width: 100%;
+    height: 200px; /* 調整圖片的高度 */
+    object-fit: none; /* 不要填滿父元素 */
+    object-position: center top; /* 將圖片置中，頂部對齊 */
+  }
+
+  .card {
+    position: relative;
+  }
+  
+  .card .card-body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(248, 227, 203, 0.8); /* 設定背景顏色及透明度 */
+    padding: 10px;
+  }
+  
+  .btn {
+    margin-right: 10px; /* 設置右邊間距 */
+  }
+
+  .btn-primary{
+    background-color: #4575AB;
+  }
+  
+  
