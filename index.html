@@ -20,7 +20,7 @@
   <script type="text/babel">
     function Navbar() {
       return (
-        <nav className="navbar background_blue navbar-expand-sm navbar-expand-md navbar-expand-lg navbar-dark py-2">
+        <nav className="navbar background-blue navbar-expand-sm navbar-expand-md navbar-expand-lg navbar-dark py-2">
           <div className="container-fluid">
             <a className="navbar-brand" href=""><img className="logo-pic" src="img/CEOlogo.png" alt="LOGO"/>&ensp;&ensp;&ensp;CEO首席教育</a>
             <div className="collapse navbar-collapse" id="navbarCollapse">
@@ -68,40 +68,81 @@
       'UNIT8 | Web3 & 元宇宙'
     ];
 
-    function BigCard() {
-      const [currentIndex, setCurrentIndex] = React.useState(0);
+    const unitButton = [
+      'unit1.html',
+      'unit2.html',
+      'unit3.html',
+      'unit4.html',
+      'unit5.html',
+      'unit6.html',
+      'unit7.html',
+      'unit8.html'
+  ];
 
-      const handleImageChange = (index) => {
-        setCurrentIndex(index);
-      };
+  function BigCard() {
+    const [currentIndex, setCurrentIndex] = React.useState(0);
 
-      return (
-        <div className="col-md-8">
-          <div className="card">
+    const handleImageChange = (index) => {
+      setCurrentIndex(index);
+    };
+
+    return (
+      <div className="col-md-6">
+        <div className="card main-card">
+          <div className="image-container">
             <img src={imagePaths[currentIndex]} className="card-img-top" alt="Card Image" />
-            <div className="card-body">
-              <h5 className="card-title">{titleArray[currentIndex]}</h5>
-              <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id fringilla ligula.</p>
-              <div className="btn-group" style={{ zIndex: 1 }}>
-                {imagePaths.map((path, index) => (
-                  <button
-                    type="button"
-                    className="btn btn-primary rounded-circle"
-                    onClick={() => handleImageChange(index)}
-                  >
-                    {index + 1}
-                  </button>
-                ))}
+          </div>
+          <div className="card-body">
+            <div className="row">
+              <div className="col">
+                <div className="card-title">
+                  <h5 className="card-title bigcard-item">
+                    <a href={unitButton[currentIndex]}>
+                      <button
+                        type="button"
+                        className="play-button btn-primary rounded-circle"
+                      ></button>
+                    </a>
+                    &ensp;{titleArray[currentIndex]}
+                  </h5>
+                </div>
+              </div>
+              <div className="col text-end">
+                <div className="btn-group" style={{ zIndex: 1 }}>
+                  {imagePaths.map((path, index) => (
+                    <button
+                      type="button"
+                      className="btn btn-primary rounded-circle"
+                      onClick={() => handleImageChange(index)}
+                    >
+                      {index + 1}
+                    </button>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
         </div>
-      );
-    }
+      </div>
+    );
+  }
+
+  function Flashcards() {
+  return (
+    <div className="col-md-5">
+      <div className="flashcard-background">
+        <div className="flashcard-content">
+          <h3 className="text-center main-text">最自由開放的系統性區塊鏈教育組織</h3>
+          <h4 className="text-center side-text">區塊鏈不只新技術，更是一種生活方式</h4>
+        </div>
+      </div>
+    </div>
+  );
+}
 
     function Footer() {
       return (
-        <footer className="footer py-2 background_blue">
+        <footer className="footer py-2 background-blue">
           <div className="container text-center">
             <small className="fw-light mb-0 yellow">本報告不提供任何投資建議。所有資料僅供信息和教育目的。不應基於此處提供的信息做出任何投資決策，您對自己的投資決策完全負責。</small>
           </div>
@@ -114,10 +155,11 @@
         <div>
           <Navbar />
           <div className="spacer"></div>
-          <div className="container">
+          <div className="container-fluid bottom">
             <div className="row">
-              <BigCard /> {/* 在這裡加入卡片元件 */}
-              <div className="col-md-4">元素 2</div>
+              <samp className="shift"></samp>
+              <BigCard /> 
+              <Flashcards />
             </div>
           </div>
           <Footer />
