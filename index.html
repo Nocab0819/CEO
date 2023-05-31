@@ -18,27 +18,46 @@
   <div id="root"></div>
 
   <script type="text/babel">
-    function Navbar() {
-      return (
-        <nav className="navbar background-blue navbar-expand-sm navbar-expand-md navbar-expand-lg navbar-dark py-2">
-          <div className="container-fluid">
-            <a className="navbar-brand" href=""><img className="logo-pic" src="img/CEOlogo.png" alt="LOGO"/>&ensp;&ensp;&ensp;CEO首席教育</a>
-            <div className="collapse navbar-collapse" id="navbarCollapse">
-              <ul className="navbar-nav ml-auto">
-                <li className="nav-item">
-                  <a className="nav-link" href="">關於我們</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="">學習資源</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="">課程清單</a>
-                </li>
-              </ul>
-            </div>
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
-              <span className="navbar-toggler-icon"></span>
-            </button>
+    function Navbar(){
+      return(
+        <nav class="navbar background-blue navbar-expand-lg navbar-dark bg-dar">
+          <a className="navbar-brand" href="index.html"><img className="logo-pic" src="img/CEOlogo.png" alt="LOGO"/>&ensp;&ensp;&ensp;CEO首席教育</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">首頁 <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">關於我們</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">學習資源</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  課程清單
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">總覽</a>
+                  <a class="dropdown-item" href="unit1.html">UNIT 1</a>
+                  <a class="dropdown-item" href="unit2.html">UNIT 2</a>
+                  <a class="dropdown-item" href="unit3.html">UNIT 3</a>
+                  <a class="dropdown-item" href="unit4.html">UNIT 4</a>
+                  <a class="dropdown-item" href="unit5.html">UNIT 5</a>
+                  <a class="dropdown-item" href="unit6.html">UNIT 6</a>
+                  <a class="dropdown-item" href="unit7.html">UNIT 7</a>
+                  <a class="dropdown-item" href="unit8.html">UNIT 8</a>
+                </div>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" />
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">搜尋</button>
+            </form>
           </div>
         </nav>
       );
@@ -143,7 +162,7 @@
     function Footer() {
       return (
         <footer className="footer py-2 background-blue">
-          <div className="container text-center">
+          <div className="footer-container text-center">
             <small className="fw-light mb-0 yellow">本報告不提供任何投資建議。所有資料僅供信息和教育目的。不應基於此處提供的信息做出任何投資決策，您對自己的投資決策完全負責。</small>
           </div>
         </footer>
@@ -154,6 +173,7 @@
       return (
         <div>
           <Navbar />
+          
           <div className="spacer"></div>
           <div className="container-fluid bottom">
             <div className="row">
