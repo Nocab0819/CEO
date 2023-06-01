@@ -1,4 +1,4 @@
-.background_blue {
+.background-blue {
   background-color: #4575AB;
 }
   
@@ -66,12 +66,30 @@
     color: #F8E3CB;
   }
 
-  /* 待調整圖片大小 */
+  .image-container{
+    max-width: 100%;
+    max-height: 100%;
+    width: 896px;
+    height: 448px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+  }
+
+  .bigcard-item{
+    width: 300px;
+  }
+
   .card-img {
     width: 100%;
     height: 200px; /* 調整圖片的高度 */
     object-fit: none; /* 不要填滿父元素 */
     object-position: center top; /* 將圖片置中，頂部對齊 */
+  }
+
+  .card-img-top{
+    max-width: 100%;
+    max-height: 100%;
   }
 
   .card {
@@ -81,8 +99,8 @@
   .image-container {
     max-width: 100%; /* 圖片的最大寬度設定為父元素的100% */
     max-height: 100%; /* 圖片的最大高度設定為父元素的100% */
-    width: 200px;
-    height: 200px;
+    width: 896px;
+    height: 448px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,11 +108,17 @@
   
   .card .card-body {
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(248, 227, 203, 0.8); /* 設定背景顏色及透明度 */
+    background-color: rgba(248, 227, 203, 0.8);
     padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .card-title .btn-group{
+    line-height: 10px;
+    align-items: center;
   }
   
   .btn {
@@ -102,7 +126,135 @@
   }
 
   .btn-primary{
+    width: 36px;
+    height: 36px;
     background-color: #4575AB;
   }
+
+  .btn-outline-success{
+    color: #F8E3CB;
+    border-color: #F8E3CB;
+  }
+  .btn-outline-success:hover{
+    color: black;
+    border-color: #FFF;
+    background-color: #FFF;
+  }
+
+  .card-title{
+    color: #4575AB;
+    font-family: Microsoft JhengHei, Arial, sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+
+  .bigcard-item{
+    width: 360px;
+  }
   
+  .play-button {
+    /* 設定按鈕的外觀 */
+    display: inline-block;
+    padding: 10px;
+    background-color: #4575AB;
+    color: #F8E3CB;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    position: relative;
+  }
   
+  .play-button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8px 0 8px 14px; /* 調整邊框寬度 */
+    border-color: transparent transparent transparent #F8E3CB;
+  }  
+  
+  .play-button:hover:before {
+    border-color: transparent transparent transparent #fff;
+  }
+  
+  .flashcard-background {
+    background-color: #4575AB;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 0px 20px 0px;
+  }
+  
+  .flashcard-content {
+    text-align: center;
+    color: #F8E3CB;
+  }
+
+  .shift{
+    margin-left: 60px;
+  }
+  
+  .bottom{
+    margin-bottom: 30px;
+  }
+
+  .main-text{
+    font-size: x-large;
+  }
+
+  .side-text{
+    font-size: medium;
+  }
+
+  .flashcard-content{
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .text-center{
+    text-align: center!important;
+  }
+
+/* unit1 */
+.bd-lesson{
+  padding: 1.5rem;
+    margin-right: 0;
+    margin-left: 0;
+    border-width: 0.2rem;
+}
+.carousel {
+  position: relative;
+}
+
+  /* unit2 */
+  .card {
+    position: relative;
+  }
+  
+  .lesson-card-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(248, 227, 203, 0.8);
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .lesson-title{
+    margin-top: 10px;
+    color: #4575AB;
+    font-size: xx-large;
+    font-weight: bold;
+    
+  }
