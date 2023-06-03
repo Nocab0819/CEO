@@ -1,30 +1,46 @@
-import React from 'react';
-import '../Navbar.css';
+function Navbar(){
+  return(
+    <nav class="navbar background-blue navbar-expand-lg navbar-dark bg-dar">
+      <a className="navbar-brand" href="index.html"><img className="logo-pic" src="img/CEOlogo.png" alt="LOGO"/>&ensp;&ensp;&ensp;CEO首席教育</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-const Navbar = () => {
-    return (
-        <nav className="navbar navbar-expand-sm navbar-expand-md navbar-dark">
-          <div className="container-fluid">
-            <a className="navbar-brand" href=""><img className="logo-pic" src="img/CEOlogo.png" alt="LOGO"/>&ensp;&ensp;&ensp;CEO首席教育</a>
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
-              <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarCollapse">
-              <ul className="navbar-nav ml-auto">
-                <li className="nav-item">
-                  <a className="nav-link" href="">關於我們</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="">學習資源</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="">課程清單</a>
-                </li>
-              </ul>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">首頁 <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">關於我們</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">學習資源</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              課程清單
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">總覽</a>
+              <a class="dropdown-item" href="unit1.html">UNIT 1</a>
+              <a class="dropdown-item" href="unit2.html">UNIT 2</a>
+              <a class="dropdown-item" href="unit3.html">UNIT 3</a>
+              <a class="dropdown-item" href="unit4.html">UNIT 4</a>
+              <a class="dropdown-item" href="unit5.html">UNIT 5</a>
+              <a class="dropdown-item" href="unit6.html">UNIT 6</a>
+              <a class="dropdown-item" href="unit7.html">UNIT 7</a>
+              <a class="dropdown-item" href="unit8.html">UNIT 8</a>
             </div>
-          </div>
-        </nav>
-      );
-  };
-  
-  export default Navbar;  
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">搜尋</button>
+        </form>
+      </div>
+    </nav>
+  );
+}
+
+export default Navbar;

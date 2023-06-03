@@ -17,14 +17,25 @@
 <body>
     <div id="root"></div>
     <script src="js/Navbar.js" type="text/babel"></script>
+    <script src="js/Lesson.js" type="text/babel"></script>
+    <script src="js/ChangeLesson.js" type="text/babel"></script>
     <script src="js/Footer.js" type="text/babel"></script>
-
+    
     <script type="text/babel">
     function App() {
+        const lessonUrl = "https://drive.google.com/file/d/1X9t5j9IwMsgcAZE99CQPjVlptjTll7KL/preview";
+        const lastlesson = "lesson1-5.html"
+        const nextlesson = "unit2.html"
+        const lastname = "上一回"
+        const nextname = "至下一單元"
+
       return (
-        <div>
-          <Navbar />
-          <Footer />
+
+      <div style={{height: '100vh', display: 'flex', flexDirection: 'column' }}>
+        <Navbar />
+        <Lesson url={lessonUrl}/>
+        <ChangeLesson lastlesson={lastlesson} nextlesson={nextlesson} lastname={lastname} nextname={nextname}/>
+        <Footer />
         </div>
       );
     }
