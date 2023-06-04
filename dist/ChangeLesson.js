@@ -1,9 +1,14 @@
-function ChangeLesson({
-  lastlesson,
-  nextlesson,
-  lastname,
-  nextname
-}) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports["default"] = void 0;
+function ChangeLesson(_ref) {
+  var lastlesson = _ref.lastlesson,
+    nextlesson = _ref.nextlesson,
+    lastname = _ref.lastname,
+    nextname = _ref.nextname;
   return /*#__PURE__*/React.createElement("div", {
     className: "btn-group botton-buttom margin-auto",
     role: "group",
@@ -18,4 +23,5 @@ function ChangeLesson({
     role: "button"
   }, nextname));
 }
-export default ChangeLesson;
+var _default = ChangeLesson;
+exports["default"] = _default;

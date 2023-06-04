@@ -1,3 +1,5 @@
+"use strict";
+
 function LessonCard() {
   return /*#__PURE__*/React.createElement("section", null, /*#__PURE__*/React.createElement("div", {
     className: "container-fluid"
