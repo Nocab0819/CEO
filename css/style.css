@@ -1,7 +1,7 @@
 .background-blue {
   background-color: #4575AB;
-}
-  
+}  
+
   nav.navbar .navbar-nav .nav-item .nav-link, .navbar-brand {
     color: #F8E3CB;
     font-family: Microsoft JhengHei, Arial, sans-serif;
@@ -226,6 +226,11 @@
   }
 
 /* unit1 */
+
+.lesson-img{
+  object-fit: cover;
+  height: 350px;
+}
 .bd-lesson{
   padding: 1.5rem;
     margin-right: 0;
@@ -294,5 +299,5 @@
   }
   
   .unit-img{
-    width: 100%;
+    height: calc(100vh - 92px);
   }
