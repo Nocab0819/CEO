@@ -7,4 +7,3 @@ function ChangeLesson({lastlesson, nextlesson, lastname, nextname}) {
     );
   }
   
-  export default ChangeLesson;

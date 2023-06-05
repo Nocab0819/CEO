@@ -20,6 +20,15 @@
     <script src="src/Footer.js" type="text/babel"></script>
     
     <script type="text/babel">
+      function UnitImg(){
+        return(
+          <div  className="row">
+            <div className="col-md-12">
+                <img src="img/unit1.png" className="unit-img" alt="Unit Image" />
+            </div>
+          </div>
+        );
+      }
 
     function LessonCard(){
         return(
@@ -156,9 +165,11 @@
     }
 
     function App() {
+
       return (
         <div>
           <Navbar />
+          <UnitImg />
           <LessonCard />
           <Footer />
         </div>

@@ -48,7 +48,7 @@
       display: block;
     } */
   /* } */
-  @media (max-width: 767px) {
+  @media (max-width: 1190px) {
     .navbar-expand-md .navbar-collapse {
       display: none;
     }
@@ -269,4 +269,30 @@
 
   .margin-top{
     margin-top: 30px;
+  }
+
+  .alert{
+    margin-bottom: 0px;
+  }
+
+  @media (max-width: 1190px) {
+    .lesson-button .btn-group {
+      display: none;
+    }
+  }
+  
+  .button-buttom{
+    width: 200px;
+    margin-left: 5px;
+  }
+
+  .lesson-card-text .play-button {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  
+  .unit-img{
+    width: 100%;
   }
