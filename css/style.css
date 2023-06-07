@@ -254,6 +254,8 @@ body{
   /* unit2 */
   .card {
     position: relative;
+    margin-left: 30px;
+    margin-right: 30px;
   }
   
   .lesson-card-text {
@@ -310,8 +312,8 @@ body{
 
   .unit-img{
     object-fit: cover;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 45px;
+    padding-right: 45px;
     height: 400px;
     width: 100%;
     margin-bottom: 15px;
