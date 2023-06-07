@@ -1,5 +1,6 @@
 body{
   font-family: Poppins, Microsoft JhengHei, Arial, sans-serif;
+  height: 100px;
 }
 .background-blue {
   background-color: #4575AB;
@@ -231,6 +232,18 @@ body{
     object-fit: cover;
   }
 
+  .footer-text{
+    font-size: x-small;
+  }
+
+  .alert{
+    padding: 5px;
+  }
+
+  .alert-dismissible .close {
+    padding: 10px;
+  }
+
 /* unit1 */
 
 .lesson-img{
@@ -264,16 +277,14 @@ body{
     left: 0;
     width: 100%;
     background-color: rgba(248, 227, 203, 0.8);
-    padding: 10px;
     box-sizing: border-box;
   }
 
   .lesson-title{
-    margin-top: 10px;
+    padding-top: 30px;
     color: #4575AB;
     font-size: xx-large;
     font-weight: bold;
-    
   }
 
   .botton-buttom{
@@ -314,14 +325,14 @@ body{
     object-fit: cover;
     padding-left: 45px;
     padding-right: 45px;
-    height: 400px;
+    height: 360px;
     width: 100%;
     margin-bottom: 15px;
   }
   .unit-title{
     width: 760px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     color: #4575AB;
     font-weight: bold;
     background-color: #F8E3CB;
@@ -341,7 +352,10 @@ body{
     margin-left: 60px;
     margin-right: 40px;
     color: #4575AB;
-    font-size: x-large;
+    font-size: 22px;
     font-weight: light;
-    line-height: 42px;
+    line-height: 32px;
+  }
+  .row{
+    width: 100%;
   }
