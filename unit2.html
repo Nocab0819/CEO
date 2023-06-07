@@ -20,8 +20,32 @@
     <script src="src/Footer.js" type="text/babel"></script>
 
     <script type="text/babel">
+      function UnitImg(){
+        return(
+          <div  className="row">
+            <div className="col-md-6 d-flex justify-content-center">
+                <img src="img/unit2.png" className="unit-img" alt="Unit Image" />
+            </div>
+            <div className="col-md-6">
+                <h1 className="unit-big-title">
+                  &ensp;|&ensp;區塊鏈的生態系
+                </h1>
+                <h2 className="unit-introduce">
+                  狹義的去定義區塊鏈了話，是一門交錯著密碼學與程式碼，極度生澀、艱難的技術，使得大部分人很難去了解其運作原理。我們將這些極度抽象並且用一些奇怪符號表示的技術內容，用情境及圖表去具象化，並拔掉很艱深的詞彙，讓大家只需要國小程度的數學、零程式基礎也能夠理解區塊鏈如何運作！
+                </h2>
+            </div>
+          </div>
+        );
+      }
+
     function LessonCard(){
         return(
+          <div className="unit">
+            <div className="row">
+              <h1 className="unit-title col-md-6">
+              &ensp;|&ensp;課程資源
+              </h1>
+            </div>
           <section>
             <div className="container-fluid">
   <div className="bd-lesson">
@@ -114,6 +138,7 @@
   </div>
 </div>
     </section>
+    </div>
         );
     }
     
@@ -121,6 +146,7 @@
       return (
         <div>
           <Navbar />
+          <UnitImg />
           <LessonCard />
           <Footer />
         </div>

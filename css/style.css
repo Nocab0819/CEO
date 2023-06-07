@@ -1,3 +1,6 @@
+body{
+  font-family: Poppins, Microsoft JhengHei, Arial, sans-serif;
+}
 .background-blue {
   background-color: #4575AB;
 }  
@@ -309,7 +312,7 @@
     object-fit: cover;
     padding-left: 15px;
     padding-right: 15px;
-    height: 350px;
+    height: 400px;
     width: 100%;
     margin-bottom: 15px;
   }
@@ -321,7 +324,7 @@
     font-weight: bold;
     background-color: #F8E3CB;
     border-radius: 0px 20px 20px 0px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 
   .unit-big-title{
@@ -336,7 +339,7 @@
     margin-left: 60px;
     margin-right: 40px;
     color: #4575AB;
-    font-size:x-large;
+    font-size: x-large;
     font-weight: light;
-    padding-bottom: 30px;
+    line-height: 42px;
   }
