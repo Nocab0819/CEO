@@ -20,6 +20,15 @@
     <script src="src/Footer.js" type="text/babel"></script>
 
     <script type="text/babel">
+            const lessonButton = [
+      'lesson3-1.html',
+      'lesson3-2.html',
+      'lesson3-3.html',
+      'lesson3-4.html',
+      'lesson3-2.html',
+      'lesson3-3.html',
+      'lesson3-4.html',
+  ];
       function UnitImg(){
         return(
           <div  className="row">
@@ -39,11 +48,28 @@
       }
 
     function LessonCard(){
+      const handleButtonClick = (url) => {
+    window.location.href = url; // 將當前視窗的位置設定為指定的 URL
+  };
         return(
           <div className="unit">
             <div className="row">
-              <h1 className="unit-title col-md-6">
+              <h1 className="unit-title col-md-6 row">
+                <div className="col-md-6">
               &ensp;|&ensp;課程資源
+              </div>
+              <div className="btn-group lesson-main-button" style={{ zIndex: 1 }}>
+            {lessonButton.map((url, index) => (
+              <button
+                key={index}
+                type="button"
+                className="btn btn-primary rounded-circle"
+                onClick={() => handleButtonClick(url)}
+              >
+                {index + 1}
+              </button>
+            ))}
+          </div>
               </h1>
             </div>
           <section>

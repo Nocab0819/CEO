@@ -64,7 +64,7 @@
     };
 
     return (
-      <div className="col-md-6">
+      <div className="col-md-6 main-card-block">
         <div className="card main-card">
           <div className="image-container">
             <img src={imagePaths[currentIndex]} className="card-img-top" alt="Card Image" />
@@ -117,6 +117,30 @@
   );
 }
 
+function TeamImg() {
+  return (
+    <div className="col-md-6 team-img-block">
+      <div className="card">
+          <div className="image-container">
+            <img src="img/unit1.png" className="team-img" alt="團隊照片" />
+          </div>
+        </div>
+    </div>
+  );
+}
+
+function AboutUs() {
+  return (
+    <div className="col-md-5 about-block">
+      <div className="card">
+          <div className="image-container">
+            <img src="img/unit1.png" className="team-img" alt="團隊照片" />
+          </div>
+        </div>
+    </div>
+  );
+}
+
     function App() {
       return (
         <div>
@@ -128,6 +152,13 @@
               <samp className="shift"></samp>
               <BigCard /> 
               <Flashcards />
+            </div>
+          </div>
+          <div className="container-fluid bottom">
+            <div className="row">
+              <samp className="shift"></samp>
+              <TeamImg /> 
+              <AboutUs />
             </div>
           </div>
           <Footer />
