@@ -133,11 +133,20 @@ function AboutUs() {
   return (
     <div className="col-md-5 about-block">
       <div className="card">
-          <div className="image-container">
-            <img src="img/unit1.png" className="team-img" alt="團隊照片" />
+          <img src="img/AboutUsB.png" className="lesson-img bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: First slide" alt=""/>
+          <div className="lesson-card-text">
+            <p className="margin-left about-title d-flex align-items-center">
+              <a href="aboutus.html">
+                <button
+                  type="button"
+                  className="play-button btn-primary rounded-circle lesson-button"
+                ></button>
+              </a>
+              <span className="ml-2">關於我們</span>
+            </p>
           </div>
         </div>
-    </div>
+</div>
   );
 }
 

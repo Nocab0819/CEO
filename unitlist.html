@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CEO</title>
+  <link rel="stylesheet" href="css/antd.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="root"></div>
+  <script src="src/NavbarUp.js" type="text/babel"></script>
+  <script src="src/Footer.js" type="text/babel"></script>
+
+  <script type="text/babel">
+    const unit1Button = [
+      'lesson1-1.html',
+      'lesson1-2.html',
+      'lesson1-3.html',
+      'lesson1-4.html',
+      'lesson1-5.html',
+      'lesson1-6.html',
+  ];
+  const unit2Button = [
+      'lesson2-1.html',
+      'lesson2-2.html',
+      'lesson2-3.html',
+      'lesson2-4.html',
+  ];
+    function List() {
+        const handleButtonClick = (url) => {
+            window.location.href = url; // 將當前視窗的位置設定為指定的 URL
+        };
+        return(
+            <div>
+            <div class="media">
+                <div className="row">
+                    <div className="list-img-container col-md-4">
+                        <img src="img/unit1.png" class="mr-3 list-img" alt="UNIT1" />
+                    </div>
+                    <div class="media-body col-md-10">
+                        <h1 className="list-title col-md-14 row">
+                            <div>
+                                &ensp;|&ensp;新世界的入口
+                            </div>
+                                <div className="btn-group list-button" style={{ zIndex: 1 }}>
+                                    {unit1Button.map((url, index) => (
+                                    <button
+                                        key={index}
+                                        type="button"
+                                        className="btn btn-primary rounded-circle"
+                                        onClick={() => handleButtonClick(url)}
+                                    >
+                                        {index + 1}
+                                    </button>
+                                    ))}
+                                </div>
+                        </h1>
+                        <h2 className="list-introduce">
+                            新世界的入口引領讀者進入區塊鏈世界，新世界具有兩種寓意：<br />&ensp;&ensp;◎ 未來的世界 — 一個未來的時空<br />&ensp;&ensp;◎ 元宇宙 — 一個不同的現實世界<br/>進入區塊鏈世界，開啟未來的大門！在這個章節當中，讀者可以了解到區塊鏈的前世今生，區塊鏈究竟是什麼？有什麼特性？又對於世界有什麼改變？讓我們踏上這段旅程，一步步了解區塊鏈如何改變未來吧！
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="media">
+                <div className="row">
+                    <div className="list-img-container col-md-4">
+                        <img src="img/unit2.png" class="mr-3 list-img" alt="UNIT1" />
+                    </div>
+                    <div class="media-body col-md-10">
+                        <h1 className="list-title col-md-14 row">
+                            <div>
+                                &ensp;|&ensp;區塊鏈的生態系
+                            </div>
+                                <div className="btn-group list-button" style={{ zIndex: 1 }}>
+                                    {unit2Button.map((url, index) => (
+                                    <button
+                                        key={index}
+                                        type="button"
+                                        className="btn btn-primary rounded-circle"
+                                        onClick={() => handleButtonClick(url)}
+                                    >
+                                        {index + 1}
+                                    </button>
+                                    ))}
+                                </div>
+                        </h1>
+                        <h2 className="list-introduce">
+                            如果說區塊鏈是一個世界，那很多個區塊鏈就是很多個世界，每個世界又都有不一樣的生態系，不同的生態系又有各自的規則以及文化。<br/>這個章節主要在介紹各種類型的生態系以及其各自的特色、應用，可以幫助讀者快速了解不同區塊鏈項目的基本面，從而找到自己歸屬的生態（或是決定要投資什麼幣（◑ ‿ ◐））...
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="media">
+                <div className="row">
+                    <div className="list-img-container col-md-4">
+                        <img src="img/unit3.png" class="mr-3 list-img" alt="UNIT1" />
+                    </div>
+                    <div class="media-body col-md-10">
+                        <h1 className="list-title col-md-14 row">
+                            <div>
+                                &ensp;|&ensp;區塊鏈運行法則
+                            </div>
+                                <div className="btn-group list-button" style={{ zIndex: 1 }}>
+                                    {unit1Button.map((url, index) => (
+                                    <button
+                                        key={index}
+                                        type="button"
+                                        className="btn btn-primary rounded-circle"
+                                        onClick={() => handleButtonClick(url)}
+                                    >
+                                        {index + 1}
+                                    </button>
+                                    ))}
+                                </div>
+                        </h1>
+                        <h2 className="list-introduce">
+                            狹義的去定義區塊鏈的話，是一門交錯著密碼學與程式碼，極度生澀、艱難的技術，使得大部分人很難去了解其運作原理。<br/>我們將這些極度抽象並且用一些奇怪符號表示的技術內容，用情境及圖表去具象化，並拔掉很艱深的詞彙，讓大家只需要國小程度的數學、零程式基礎也能夠理解區塊鏈如何運作！
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="media">
+                <div className="row">
+                    <div className="list-img-container col-md-4">
+                        <img src="img/unit4.png" class="mr-3 list-img" alt="UNIT1" />
+                    </div>
+                    <div class="media-body col-md-10">
+                        <h1 className="list-title col-md-14 row">
+                            <div>
+                                &ensp;|&ensp;唯一的通行證
+                            </div>
+                                <div className="btn-group list-button" style={{ zIndex: 1 }}>
+                                    {unit1Button.map((url, index) => (
+                                    <button
+                                        key={index}
+                                        type="button"
+                                        className="btn btn-primary rounded-circle"
+                                        onClick={() => handleButtonClick(url)}
+                                    >
+                                        {index + 1}
+                                    </button>
+                                    ))}
+                                </div>
+                        </h1>
+                        <h2 className="list-introduce">
+                            錢包是進入區塊鏈世界中非常重要的通行證，掌管存取用戶在去中心化帳戶的權力。<br/>但錢包與去中心化帳戶的本質長什麼形狀，其實並不廣為人知。<br/>在此章節中，將探索錢包的關鍵概念和功能，以生活化的方式帶領讀者深入了解區塊鏈帳戶的基礎—非對稱式密碼學，並進一步探討各種不同形式的錢包。<br/>讓我們揭開錢包的神秘面紗，為暢遊區塊鏈世界做好準備！
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="media">
+                <div className="row">
+                    <div className="list-img-container col-md-4">
+                        <img src="img/unit5.png" class="mr-3 list-img" alt="UNIT1" />
+                    </div>
+                    <div class="media-body col-md-10">
+                        <h1 className="list-title col-md-14 row">
+                            <div>
+                                &ensp;|&ensp;創世紀 - 比特幣
+                            </div>
+                                <div className="btn-group list-button" style={{ zIndex: 1 }}>
+                                    {unit1Button.map((url, index) => (
+                                    <button
+                                        key={index}
+                                        type="button"
+                                        className="btn btn-primary rounded-circle"
+                                        onClick={() => handleButtonClick(url)}
+                                    >
+                                        {index + 1}
+                                    </button>
+                                    ))}
+                                </div>
+                        </h1>
+                        <h2 className="list-introduce">
+                            比特幣的登場開啟了區塊鏈世界的全新時代。從其去中心化特性、發行規則到共識機制，比特幣引發了一場革命。<br/>本章節將以比特幣為主軸，深入探索其科技創新、金融價值以及面臨的社會議題。跟隨著中本聰的腳步，我們將引領讀者進一步認識比特幣所創建的全新秩序。<br/>準備好探索這個充滿驚奇的全新世界了嗎？讓我們一同展開這段令人振奮的旅程！
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="media">
+                <div className="row">
+                    <div className="list-img-container col-md-4">
+                        <img src="img/unit6.png" class="mr-3 list-img" alt="UNIT1" />
+                    </div>
+                    <div class="media-body col-md-10">
+                        <h1 className="list-title col-md-14 row">
+                            <div>
+                                &ensp;|&ensp;次世代 - 以太坊
+                            </div>
+                                <div className="btn-group list-button" style={{ zIndex: 1 }}>
+                                    {unit1Button.map((url, index) => (
+                                    <button
+                                        key={index}
+                                        type="button"
+                                        className="btn btn-primary rounded-circle"
+                                        onClick={() => handleButtonClick(url)}
+                                    >
+                                        {index + 1}
+                                    </button>
+                                    ))}
+                                </div>
+                        </h1>
+                        <h2 className="list-introduce">
+                            以太坊作為次世代區塊鏈平台，引領著區塊鏈世界的演進。其獨特的特性和智能合約功能開啟了無限的應用可能性。<br />在這章節中，我們將深入探索以太坊的技術創新、分散式應用程式（DApps）和智能合約的運作原理。同時，也會探討以太坊面臨的挑戰，如可擴展性和隱私性問題。<br />讓我們一同探索次世代區塊鏈平台-以太坊所帶來的革新！
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="media">
+                <div className="row">
+                    <div className="list-img-container col-md-4">
+                        <img src="img/unit7.png" class="mr-3 list-img" alt="UNIT1" />
+                    </div>
+                    <div class="media-body col-md-10">
+                        <h1 className="list-title col-md-14 row">
+                            <div>
+                                &ensp;|&ensp;新時代的貨幣
+                            </div>
+                                <div className="btn-group list-button" style={{ zIndex: 1 }}>
+                                    {unit1Button.map((url, index) => (
+                                    <button
+                                        key={index}
+                                        type="button"
+                                        className="btn btn-primary rounded-circle"
+                                        onClick={() => handleButtonClick(url)}
+                                    >
+                                        {index + 1}
+                                    </button>
+                                    ))}
+                                </div>
+                        </h1>
+                        <h2 className="list-introduce">
+                            新時代的代幣經濟正在重新定義貨幣的角色和價值。<br />探索代幣的基本概念、不同類型以及其在經濟系統中的功能和用途。了解去中心化金融（DeFi）、非同質化代幣（NFT）和初代代幣發行（ICO）對金融市場和社會的影響。<br />準備好進入這個新時代的貨幣世界了嗎？讓我們一同開啟這場變革的旅程！
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="media">
+                <div className="row">
+                    <div className="list-img-container col-md-4">
+                        <img src="img/unit8.png" class="mr-3 list-img" alt="UNIT1" />
+                    </div>
+                    <div class="media-body col-md-10">
+                        <h1 className="list-title col-md-14 row">
+                            <div>
+                                &ensp;|&ensp;Web3 & 元宇宙
+                            </div>
+                                <div className="btn-group list-button" style={{ zIndex: 1 }}>
+                                    {unit1Button.map((url, index) => (
+                                    <button
+                                        key={index}
+                                        type="button"
+                                        className="btn btn-primary rounded-circle"
+                                        onClick={() => handleButtonClick(url)}
+                                    >
+                                        {index + 1}
+                                    </button>
+                                    ))}
+                                </div>
+                        </h1>
+                        <h2 className="list-introduce">
+                            Web3 和元宇宙是這個新時代的關鍵詞，重新定義了互聯網和數位世界的未來。<br />Web3 強調去中心化、安全性與通用性，是新一代網絡協議。元宇宙創造了「真實的虛擬世界」，提供豐富的互動和經濟活動。<br />這篇文章將探討web3 和元宇宙的概念、技術和對數位生活的影響。<br />讓我們基於兩者開啟一個充滿可能性的新世界。
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            </div>
+        );
+    }
+
+    function App() {
+      return (
+        <div>
+          <NavbarUp />
+          <div className="spacer"></div>
+          <div className="spacer"></div>
+          <List />
+          <Footer />
+        </div>
+      );
+    }
+
+    ReactDOM.render(
+      <App />,
+      document.getElementById('root')
+    );
+  </script>
+</body>
+</html>

@@ -1,6 +1,6 @@
-function Navbar(){
+function NavbarUp(){
   return(
-    <nav class="navbar background-blue navbar-expand-lg navbar-dark bg-dar">
+    <nav class="navbar background-blue navbar-expand-lg navbar-dark bg-dar" style={{position: 'fixed', top: 0, width: '100%',zIndex: 9999 }}>
       <a className="navbar-brand" href="index.html"><img className="logo-pic" src="img/CEOlogo.png" alt="LOGO"/>&ensp;&ensp;&ensp;CEO首席教育</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
