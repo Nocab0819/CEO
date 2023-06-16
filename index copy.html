@@ -12,7 +12,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="css/style copy.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <div id="root"></div>
@@ -64,7 +64,7 @@
     };
 
     return (
-      <div className="main-card-block">
+      <div className="col-md-6 main-card-block">
         <div className="card main-card">
           <div className="image-container">
             <img src={imagePaths[currentIndex]} className="card-img-top" alt="Card Image" />
@@ -106,7 +106,7 @@
 
   function Flashcards() {
   return (
-    <div className="flashcard">
+    <div className="col-md-5">
       <div className="flashcard-background">
         <div className="flashcard-content">
           <h3 className="text-center main-text">最自由開放的系統性區塊鏈教育組織</h3>
@@ -117,9 +117,21 @@
   );
 }
 
+function TeamImg() {
+  return (
+    <div className="col-md-6 team-img-block">
+      <div className="card">
+          <div className="image-container">
+            <img src="img/unit1.png" className="team-img" alt="團隊照片" />
+          </div>
+        </div>
+    </div>
+  );
+}
+
 function AboutUs() {
   return (
-    <div className="about-block">
+    <div className="col-md-5 about-block">
       <div className="card">
           <img src="img/AboutUsB.png" className="about-img bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: First slide" alt=""/>
           <div className="lesson-card-text">
@@ -143,21 +155,19 @@ function AboutUs() {
         <div>
           <Navbar />
           <div className="spacer"></div>
-          <div className="container-fluid">
-            <div className="index row">
-              <div className="col-lg-6">
-                <BigCard />
-              </div>
-              <div className="col-lg-6">
-                <div className="side row">
-                  <div className="side col-lg-12">
-                    <Flashcards />
-                  </div>
-                  <div className="side col-lg-12">
-                    <AboutUs />
-                  </div>
-                </div>
-              </div>
+          <div className="container-fluid bottom">
+            <div className="row">
+              <samp className="shift"></samp>
+              <BigCard /> 
+              <Flashcards />
+            </div>
+          </div>
+          <div className="spacer"></div>
+          <div className="container-fluid bottom">
+            <div className="row">
+              <samp className="shift"></samp>
+              <TeamImg /> 
+              <AboutUs />
             </div>
           </div>
           <Footer />
