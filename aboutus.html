@@ -16,15 +16,106 @@
 </head>
 <body>
   <div id="root"></div>
-  <script src="src/Navbar.js" type="text/babel"></script>
+  <script src="src/NavbarUp.js" type="text/babel"></script>
   <script src="src/Footer.js" type="text/babel"></script>
 
   <script type="text/babel">
+    function Top() {
+      return (
+        <div  className="row">
+            <div className="col-md-6 d-flex justify-content-center">
+                <img src="img/AboutUsG.png" className="about-img" alt="Unit Image" />
+            </div>
+            <div className="col-md-6">
+                <h1 className="unit-big-title">
+                  &ensp;|&ensp;關於CEO
+                </h1>
+                <h2 className="ceo-introduce">
+                  最自由開放的系統性區塊鏈教育組織。<br />區塊鏈不只新技術，更是一種生活方式。<br />透過區塊鏈教育創造未來，<br/>我們的使命是消除大眾對於區塊鏈學習上的阻礙。
+                </h2>
+            </div>
+          </div>
+      );
+    }
+
+    function Philosophy() {
+      return (
+        <div>
+        <div className="row">
+              <h1 className="philosophy-title col-md-4 ">
+                &ensp;|&ensp;組織理念
+              </h1>
+        </div>
+        <div className="philosophy row">
+          <div className="col-md-1 philosophy card">
+            <img src="img/comprehensive.png" className="philosophy card-img-top" alt="全面性" />
+            <div className="philosophy card-body">
+              <p className="philosophy card-title">&ensp;&ensp;全面性&ensp;&ensp;</p>
+              <p className="philosophy card-text">完整的教學內容<br />易於理解的學習資源</p>
+            </div>
+          </div>
+          <div className="col-md-1 philosophy card">
+            <img src="img/system.png" className="philosophy card-img-top" alt="系統性" />
+            <div className="philosophy card-body">
+              <p className="philosophy card-title">&ensp;&ensp;系統性&ensp;&ensp;</p>
+              <p className="philosophy card-text">完整的教學內容<br />易於理解的學習資源</p>
+            </div>
+          </div>
+          <div className="col-md-1 philosophy card">
+            <img src="img/authenticity.png" className="philosophy card-img-top" alt="真實性" />
+            <div className="philosophy card-body">
+              <p className="philosophy card-title">&ensp;&ensp;真實性&ensp;&ensp;</p>
+              <p className="philosophy card-text">完整的教學內容<br />易於理解的學習資源</p>
+            </div>
+          </div>
+          <div className="col-md-1 philosophy card">
+            <img src="img/open.png" className="philosophy card-img-top" alt="開放性" />
+            <div className="philosophy card-body">
+              <p className="philosophy card-title">&ensp;&ensp;開放性&ensp;&ensp;</p>
+              <p className="philosophy card-text">完整的教學內容<br />易於理解的學習資源</p>
+            </div>
+          </div>
+        </div>
+        </div>
+      );
+    }
+
+    function Members() {
+      return (
+        <div>
+          <div className="row">
+              <h1 className="members-title col-md-4 ">
+                &ensp;|&ensp;組織成員
+              </h1>
+        </div>
+        </div>
+      );
+    }
+
+    function Contact() {
+      return (
+        <div>
+          <div className="row">
+              <h1 className="members-title col-md-4 ">
+                &ensp;|&ensp;聯絡我們
+              </h1>
+        </div>
+        </div>
+      );
+    }
 
     function App() {
       return (
         <div>
-          <Navbar />
+          <NavbarUp />
+          <div className="spacer"></div>
+          <div className="spacer"></div>
+          <div className="spacer"></div>
+          <div className="spacer"></div>
+          <Top />
+          <Philosophy />
+          <Members />
+          <Contact />
           <Footer />
         </div>
       );

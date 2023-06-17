@@ -69,8 +69,8 @@
           <div className="image-container">
             <img src={imagePaths[currentIndex]} className="card-img-top" alt="Card Image" />
           </div>
-          <div className="card-body">
-            <div className="row">
+          <div className="main-card-body">
+            <div className="maincard row">
               <div className="col">
                 <div className="card-title">
                   <h5 className="card-title bigcard-item">
@@ -109,11 +109,11 @@
     <div className="flashcard">
     <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
       <div className="flashcard carousel-inner">
-        <div className="carousel-item active">
-          <img src="img/class1-1-1.png" className="flashcard-img bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: First slide" alt=""/>
+        <div className="flashcard carousel-item active">
+          <img src="img/bitcoin.png" className="flashcard-img bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: First slide" alt=""/>
         </div>
         <div className="flashcard carousel-item">
-          <img src="img/class2-1-1.png" className="flashcard-img bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: First slide" alt=""/>
+          <img src="img/ethereum.png" className="flashcard-img bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: First slide" alt=""/>
         </div>
       </div>
       <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -154,10 +154,9 @@ function AboutUs() {
       return (
         <div>
           <Navbar />
-          <div className="spacer"></div>
           <div className="container-fluid">
             <div className="index row">
-              <div className="col-lg-6">
+              <div className="index col-lg-6">
                 <BigCard />
               </div>
               <div className="col-lg-6">
