@@ -1,1 +1,90 @@
-<p>unit8.html</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CEO</title>
+  <link rel="stylesheet" href="css/antd.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="root"></div>
+    <script src="src/Navbar.js" type="text/babel"></script>
+    <script src="src/Footer.js" type="text/babel"></script>
+
+    <script type="text/babel">
+            const lessonButton = [
+        'lesson8-1.html',
+  ];
+      function UnitImg(){
+        return(
+          <div  className="row">
+            <div className="col-md-6 d-flex justify-content-center">
+                <img src="img/unit8.png" className="unit-img" alt="Unit Image" />
+            </div>
+            <div className="col-md-6">
+                <h1 className="unit-big-title">
+                  &ensp;|&ensp;Web3 & 元宇宙
+                </h1>
+                <h2 className="unit-introduce">
+                    Web3 和元宇宙是這個新時代的關鍵詞，重新定義了互聯網和數位世界的未來。<br /><br />Web3 強調去中心化、安全性與通用性，是新一代網絡協議。<br />元宇宙創造了「真實的虛擬世界」，提供豐富的互動和經濟活動。這篇文章將探討web3 和元宇宙的概念、技術和對數位生活的影響。<br /><br />讓我們基於兩者開啟充滿可能性的新世界。
+                </h2>
+            </div>
+          </div>
+        );
+      }
+
+    function LessonCard(){
+      const handleButtonClick = (url) => {
+    window.location.href = url; // 將當前視窗的位置設定為指定的 URL
+  };
+        return(
+          <div className="unit">
+            <div className="row">
+              <h1 className="unit-title col-md-6 row">
+                <div className="col-md-6">
+              &ensp;|&ensp;課程資源
+              </div>
+
+              {/* Lesson按鈕放置區 */}
+
+              </h1>
+            </div>
+          <section>
+            <div className="container-fluid">
+              {/* 輪播清單放置區 */}
+                <img className="attention" src="img/attention.png"/>
+            </div>
+    </section>
+    </div>
+        );
+    }
+    
+    function App() {
+      return (
+        <div>
+          <Navbar />
+          <UnitImg />
+          <LessonCard />
+          <Footer />
+        </div>
+      );
+    }
+
+    ReactDOM.render(
+      <App />,
+      document.getElementById('root')
+    );
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.production.min.js"></script>
+</body>
+</html>

@@ -1,1 +1,98 @@
-<p>unit6.html</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CEO</title>
+  <link rel="stylesheet" href="css/antd.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="root"></div>
+    <script src="src/Navbar.js" type="text/babel"></script>
+    <script src="src/Footer.js" type="text/babel"></script>
+
+    <script type="text/babel">
+            const lessonButton = [
+        'lesson6-1.html',
+        'lesson6-2.html',
+        'lesson6-3.html',
+        'lesson6-4.html',
+        'lesson6-5.html',
+        'lesson6-6.html',
+        'lesson6-7.html',
+        'lesson6-8.html',
+        'lesson6-9.html',
+  ];
+      function UnitImg(){
+        return(
+          <div  className="row">
+            <div className="col-md-6 d-flex justify-content-center">
+                <img src="img/unit6.png" className="unit-img" alt="Unit Image" />
+            </div>
+            <div className="col-md-6">
+                <h1 className="unit-big-title">
+                  &ensp;|&ensp;次世代 - 以太坊
+                </h1>
+                <h2 className="unit-introduce">
+                    以太坊作為次世代區塊鏈平台，引領著區塊鏈世界的演進。其獨特的特性和智能合約功能開啟了無限的應用可能性。<br /><br />在這章節中，我們將深入探索以太坊的技術創新、分散式應用程式（DApps）和智能合約的運作原理。同時，也會探討以太坊面臨的挑戰，如可擴展性和隱私性問題。<br /><br />讓我們一同探索次世代區塊鏈平台-以太坊所帶來的革新！
+                </h2>
+            </div>
+          </div>
+        );
+      }
+
+    function LessonCard(){
+      const handleButtonClick = (url) => {
+    window.location.href = url; // 將當前視窗的位置設定為指定的 URL
+  };
+        return(
+          <div className="unit">
+            <div className="row">
+              <h1 className="unit-title col-md-6 row">
+                <div className="col-md-6">
+              &ensp;|&ensp;課程資源
+              </div>
+
+              {/* Lesson按鈕放置區 */}
+
+              </h1>
+            </div>
+          <section>
+            <div className="container-fluid">
+              {/* 輪播清單放置區 */}
+                <img className="attention" src="img/attention.png"/>
+            </div>
+    </section>
+    </div>
+        );
+    }
+    
+    function App() {
+      return (
+        <div>
+          <Navbar />
+          <UnitImg />
+          <LessonCard />
+          <Footer />
+        </div>
+      );
+    }
+
+    ReactDOM.render(
+      <App />,
+      document.getElementById('root')
+    );
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.production.min.js"></script>
+</body>
+</html>

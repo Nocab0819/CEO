@@ -1,1 +1,96 @@
-<p>unit4.html</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CEO</title>
+  <link rel="stylesheet" href="css/antd.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="root"></div>
+    <script src="src/Navbar.js" type="text/babel"></script>
+    <script src="src/Footer.js" type="text/babel"></script>
+
+    <script type="text/babel">
+            const lessonButton = [
+      'lesson4-1.html',
+      'lesson4-2.html',
+      'lesson4-3.html',
+      'lesson4-4.html',
+      'lesson4-5.html',
+      'lesson4-6.html',
+      'lesson4-7.html',
+  ];
+      function UnitImg(){
+        return(
+          <div  className="row">
+            <div className="col-md-6 d-flex justify-content-center">
+                <img src="img/unit4.png" className="unit-img" alt="Unit Image" />
+            </div>
+            <div className="col-md-6">
+                <h1 className="unit-big-title">
+                  &ensp;|&ensp;唯一的通行證
+                </h1>
+                <h2 className="unit-introduce">
+                    錢包是進入區塊鏈世界中非常重要的通行證，掌管存取用戶在去中心化帳戶的權力。但錢包與去中心化帳戶的本質長什麼形狀，其實並不廣為人知。<br /><br />在此章節中，將探索錢包的關鍵概念和功能，以生活化的方式帶領讀者深入了解區塊鏈帳戶的基礎—非對稱式密碼學，並進一步探討各種不同形式的錢包。<br /><br />讓我們揭開錢包的神秘面紗，為暢遊區塊鏈世界做好準備！
+                </h2>
+            </div>
+          </div>
+        );
+      }
+
+    function LessonCard(){
+      const handleButtonClick = (url) => {
+    window.location.href = url; // 將當前視窗的位置設定為指定的 URL
+  };
+        return(
+          <div className="unit">
+            <div className="row">
+              <h1 className="unit-title col-md-6 row">
+                <div className="col-md-6">
+              &ensp;|&ensp;課程資源
+              </div>
+
+              {/* Lesson按鈕放置區 */}
+
+              </h1>
+            </div>
+          <section>
+            <div className="container-fluid">
+              {/* 輪播清單放置區 */}
+                <img className="attention" src="img/attention.png"/>
+            </div>
+    </section>
+    </div>
+        );
+    }
+    
+    function App() {
+      return (
+        <div>
+          <Navbar />
+          <UnitImg />
+          <LessonCard />
+          <Footer />
+        </div>
+      );
+    }
+
+    ReactDOM.render(
+      <App />,
+      document.getElementById('root')
+    );
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.production.min.js"></script>
+</body>
+</html>

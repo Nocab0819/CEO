@@ -1,1 +1,96 @@
-<p>unit5.html</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CEO</title>
+  <link rel="stylesheet" href="css/antd.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="root"></div>
+    <script src="src/Navbar.js" type="text/babel"></script>
+    <script src="src/Footer.js" type="text/babel"></script>
+
+    <script type="text/babel">
+            const lessonButton = [
+        'lesson5-1.html',
+        'lesson5-2.html',
+        'lesson5-3.html',
+        'lesson5-4.html',
+        'lesson5-5.html',
+        'lesson5-6.html',
+        'lesson5-7.html',
+  ];
+      function UnitImg(){
+        return(
+          <div  className="row">
+            <div className="col-md-6 d-flex justify-content-center">
+                <img src="img/unit5.png" className="unit-img" alt="Unit Image" />
+            </div>
+            <div className="col-md-6">
+                <h1 className="unit-big-title">
+                  &ensp;|&ensp;創世紀 - 比特幣
+                </h1>
+                <h2 className="unit-introduce">
+                    比特幣的登場開啟了區塊鏈世界的全新時代。從其去中心化特性、發行規則到共識機制，比特幣引發了一場革命。<br /><br />本章節將以比特幣為主軸，深入探索其科技創新、金融價值以及面臨的社會議題。跟隨著中本聰的腳步，我們將引領讀者進一步認識比特幣所創建的全新秩序。<br /><br />準備好探索這個充滿驚奇的全新世界了嗎？讓我們一同展開這段令人振奮的旅程！
+                </h2>
+            </div>
+          </div>
+        );
+      }
+
+    function LessonCard(){
+      const handleButtonClick = (url) => {
+    window.location.href = url; // 將當前視窗的位置設定為指定的 URL
+  };
+        return(
+          <div className="unit">
+            <div className="row">
+              <h1 className="unit-title col-md-6 row">
+                <div className="col-md-6">
+              &ensp;|&ensp;課程資源
+              </div>
+
+              {/* Lesson按鈕放置區 */}
+
+              </h1>
+            </div>
+          <section>
+            <div className="container-fluid">
+              {/* 輪播清單放置區 */}
+                <img className="attention" src="img/attention.png"/>
+            </div>
+    </section>
+    </div>
+        );
+    }
+    
+    function App() {
+      return (
+        <div>
+          <Navbar />
+          <UnitImg />
+          <LessonCard />
+          <Footer />
+        </div>
+      );
+    }
+
+    ReactDOM.render(
+      <App />,
+      document.getElementById('root')
+    );
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.production.min.js"></script>
+</body>
+</html>

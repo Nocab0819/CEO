@@ -688,6 +688,21 @@ body{
   text-align: center;
 }
 
+.members.card-img-top{
+  object-fit: cover;
+  object-position: top;
+  height: 408px;
+}
+
+@media (max-width: 899px) {
+  .main.members.card-img-top{
+    height: 500px;
+  }
+  .side.members.card-img-top{
+    height: 200px;
+  }
+}
+
 .members-title{
   padding-left: 15px;
   padding-top: 10px;
@@ -768,10 +783,6 @@ body{
   display: flex;
   flex-wrap: wrap;
 }
-.members.row [class="col-"]{
-  display: flex;
-  flex-direction: column;
-  }
 
 @media (max-width: 767px) {
   .members.row{
@@ -825,4 +836,16 @@ body{
   font-size: medium;
   margin-bottom: 0px;
   text-align: center;
+}
+
+.attention{
+  margin-top: 20px;
+  width: 100%;
+  height: 35vh;
+  object-fit: cover;
+}
+
+.list.btn-primary.disabled, .btn-primary:disabled {
+  background-color: #4575AB;
+  font-size: medium;
 }

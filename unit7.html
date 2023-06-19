@@ -1,1 +1,90 @@
-<p>unit7.html</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CEO</title>
+  <link rel="stylesheet" href="css/antd.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="root"></div>
+    <script src="src/Navbar.js" type="text/babel"></script>
+    <script src="src/Footer.js" type="text/babel"></script>
+
+    <script type="text/babel">
+            const lessonButton = [
+        'lesson7-1.html',
+  ];
+      function UnitImg(){
+        return(
+          <div  className="row">
+            <div className="col-md-6 d-flex justify-content-center">
+                <img src="img/unit7.png" className="unit-img" alt="Unit Image" />
+            </div>
+            <div className="col-md-6">
+                <h1 className="unit-big-title">
+                  &ensp;|&ensp;新時代的貨幣
+                </h1>
+                <h2 className="unit-introduce">
+                    新時代的代幣經濟正在重新定義貨幣的角色和價值。<br />探索代幣的基本概念、不同類型以及其在經濟系統中的功能和用途。了解去中心化金融（DeFi）、非同質化代幣（NFT）和初代代幣發行（ICO）對金融市場和社會的影響。<br /><br />準備好進入這個新時代的貨幣世界了嗎？讓我們一同開啟這場變革的旅程！
+                </h2>
+            </div>
+          </div>
+        );
+      }
+
+    function LessonCard(){
+      const handleButtonClick = (url) => {
+    window.location.href = url; // 將當前視窗的位置設定為指定的 URL
+  };
+        return(
+          <div className="unit">
+            <div className="row">
+              <h1 className="unit-title col-md-6 row">
+                <div className="col-md-6">
+              &ensp;|&ensp;課程資源
+              </div>
+
+              {/* Lesson按鈕放置區 */}
+
+              </h1>
+            </div>
+          <section>
+            <div className="container-fluid">
+              {/* 輪播清單放置區 */}
+                <img className="attention" src="img/attention.png"/>
+            </div>
+    </section>
+    </div>
+        );
+    }
+    
+    function App() {
+      return (
+        <div>
+          <Navbar />
+          <UnitImg />
+          <LessonCard />
+          <Footer />
+        </div>
+      );
+    }
+
+    ReactDOM.render(
+      <App />,
+      document.getElementById('root')
+    );
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.production.min.js"></script>
+</body>
+</html>
