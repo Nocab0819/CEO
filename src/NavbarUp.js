@@ -14,9 +14,9 @@ function NavbarUp(){
           <li class="nav-item">
             <a class="nav-link" href="aboutus.html">關於我們</a>
           </li>
-          <li class="nav-item">
+          {/*<li class="nav-item">
             <a class="nav-link" href="#">線下資源</a>
-          </li>
+          </li>*/}
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               課程清單

@@ -62,6 +62,17 @@ body{
     }
   }
 
+  .main-card{
+    border-radius: 20px;
+  }
+  .flashcard{
+    border-radius: 20px;
+  }
+
+  .card.about{
+    border-radius: 20px;
+  }
+
   .index.row{
     max-width: 1000vh;
     max-height: 100vh;
@@ -88,6 +99,9 @@ body{
 
   .spacer {
     height: 30px; /* 調整你希望的間距高度 */
+  }
+  .bigspacer{
+    height: 85px;
   }
 
   .yellow{
@@ -126,13 +140,13 @@ body{
   }
 
   .image-container{
+    object-fit: cover;
     max-width: 100%;
     max-height: 100%;
     width: 100%;
     height: 448px;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
   }
 
   .card-img {
@@ -145,6 +159,10 @@ body{
   .card-img-top{
     max-width: 100%;
     max-height: 100%;
+  }
+
+  .index.card-img-top{
+    border-radius: 20px 20px 0px 0px;
   }
 
   .card {
@@ -163,6 +181,7 @@ body{
     width: 100%;
     height: 150px;
     background-color: #F8E3CB;
+    border-radius: 0px 0px 20px  20px;
   }
 
   .main-card{
@@ -353,16 +372,23 @@ body{
   .about-img{
     object-fit: cover;
     height: 335px;
+    border-radius: 20px;
   }
   .about-block{
     height: 335px;
   }
+  .about.lesson-card-text{
+    border-radius: 0px 0px 20px 20px;
+  }
 
 /* unit1 */
-
+.lesson.card{
+  border-radius: 20px;
+}
 .lesson-img{
   object-fit: cover;
   height: 350px;
+  border-radius: 20px;
 }
 .bd-lesson{
   padding: 1.5rem;
@@ -388,6 +414,7 @@ body{
     width: 100%;
     background-color: rgba(248, 227, 203, 0.8);
     box-sizing: border-box;
+    border-radius: 0px 0px 20px 20px;
   }
 
   .lesson-title{
@@ -444,6 +471,7 @@ body{
     height: 360px;
     width: 100%;
     margin-bottom: 15px;
+    border-radius: 0px 0px 50px 50px;
   }
   
   .unit-title{
@@ -843,9 +871,13 @@ body{
   width: 100%;
   height: 35vh;
   object-fit: cover;
+  border-radius: 20px;
 }
 
 .list.btn-primary.disabled, .btn-primary:disabled {
   background-color: #4575AB;
   font-size: medium;
+}
+.list-img{
+  border-radius: 10px;
 }

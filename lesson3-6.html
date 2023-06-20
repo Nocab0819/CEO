@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CEO</title>
+  <link rel="stylesheet" href="css/antd.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="root"></div>
+    <script src="src/Navbar.js" type="text/babel"></script>
+    <script src="src/Lesson.js" type="text/babel"></script>
+    <script src="src/Footer.js" type="text/babel"></script>
+    
+    <script type="text/babel">
+    function App() {
+        const lessonUrl = "https://drive.google.com/file/d/1kkTzFsETZLTFJ1UqgHD58DOns16WCOWU/preview";
+        const lastlesson = "lesson3-5.html"
+        const nextlesson = "lesson3-7.html"
+        const lastname = "上一回"
+        const nextname = "下一回"
+
+      return (
+
+      <div style={{height: '100vh', display: 'flex', flexDirection: 'column' }}>
+        <Navbar />
+        <Lesson url={lessonUrl} lastlesson={lastlesson} nextlesson={nextlesson} lastname={lastname} nextname={nextname}/>
+        <Footer />
+        </div>
+      );
+    }
+
+    ReactDOM.render(
+      <App />,
+      document.getElementById('root')
+    );
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.production.min.js"></script>
+</body>
+</html>
