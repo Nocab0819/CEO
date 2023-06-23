@@ -1,6 +1,7 @@
 body{
   font-family: Poppins, Microsoft JhengHei, Arial, sans-serif;
-  height: 100px;
+  height: 100%;
+  width: 100%;
 }
 .background-blue {
   background-color: #4575AB;
@@ -219,7 +220,7 @@ body{
   }
   
   .btn {
-    margin-right: 10px; /* 設置右邊間距 */
+    margin-right: 6px; /* 設置右邊間距 */
   }
 
   .btn-primary{
@@ -246,12 +247,12 @@ body{
   }
   @media (max-width: 991px) {
     .card-title{
-      font-size: 28px;
+      font-size: 24px;
     }
   }
 
   .bigcard-item{
-    width: 500px;
+    width: 100%;
     display: flex;
     align-items: center;
   }
@@ -357,8 +358,44 @@ body{
     object-fit: cover;
   }
 
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    z-index: 9999;
+    background-color: hsla(212, 43%, 47%, 0.8);
+  }
+
+  @media (max-width: 412px) {
+    .footer {
+      width: 412px;
+    }
+    }
+
+  .footer-container{
+    width: 100%;
+  }
+  
+  .body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #root {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }  
+
   .footer-text{
     font-size: x-small;
+    width: 100%;
   }
 
   .alert{

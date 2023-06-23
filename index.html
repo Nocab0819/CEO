@@ -157,12 +157,9 @@ function AboutUs() {
 </div>
   );
 }
-
-    function App() {
-      return (
-        <div>
-          <Navbar />
-          <div className="container-fluid">
+function Index() {
+  return(
+    <div className="container-fluid">
             <div className="index row">
               <div className="index col-lg-6">
                 <BigCard />
@@ -179,6 +176,14 @@ function AboutUs() {
               </div>
             </div>
           </div>
+  );
+}
+
+    function App() {
+      return (
+        <div>
+          <Navbar />
+          <Index />
           <Footer />
         </div>
       );
